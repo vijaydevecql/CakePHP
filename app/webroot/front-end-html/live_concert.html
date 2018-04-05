@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Event</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<link href="css/style.css" rel="stylesheet">
+<script src="js/min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+    $(".triger").click(function(){
+        $(".triger_open").slideToggle();
+    });
+	  
+	 
+});
+</script>
+</head>
+<html>
+<body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="logo pull-left"><img src="images/logo.png"></div>
+      <div class="pull-right header-rith">
+        <ul>
+          <li class="location"> <i><img src="images/loc.png" alt="" ></i> <a href="#">SELECT  A  REGION</a> </li>
+          <li class="more"><a href="#"><span></span><span></span><span></span><span></span></a></li>
+          <li class="location"> <i><img src="images/log.png" alt="" ></i> <a href="#">LOG IN / CREATE AN ACCOUNT</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">All </a></li>
+        <li><a href="#">Tickets </a></li>
+        <li class="active"><a href="live_concert.html">Concerts</a></li>
+        <li><a href="outdoor.html"> Outdoors </a></li>
+        <li><a href="livebands.html"> Live Bands </a></li>
+        <li><a href="night_life.html">Night Life </a></li>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="#">More </a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<section id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"> <img src="images/live_concert_banner.png" alt="..." width="100%"> </div>
+    <div class="item"> <img src="images/banner.png" alt="..." width="100%"> </div>
+    <div class="item"> <img src="images/banner.png" alt="..." width="100%"> </div>
+  </div>
+  
+  <!-- Controls 
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>--> 
+</section>
+<section class="search1">
+  <div class="container">
+    <form class="search_field">
+      <div class="searchf">
+        <input type="text" name="" placeholder="Date or venue name or event name or artist name?">
+      </div>
+      <div class="searchf1">
+        <select>
+          <option>Dubai</option>
+          <option>Dubai</option>
+        </select>
+        <i><img src="images/drop.png"></i> </div>
+      <div class="dat">
+        <input type="text" id="datepicker">
+      </div>
+      <div class="serch">
+        <input type="button" value="Search" >
+        <a href="#">Advanced Search</a> </div>
+    </form>
+  </div>
+</section>
+<div class="clearfix"></div>
+<section id="outdoor">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="outdoor_text">Concerts</h2>
+      </div>
+      <div class="col-sm-12"> 
+        
+        <!-- Nav tabs -->
+        <div class="weekselect_btn">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">This Week</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Today</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Recommend</a></li>
+          </ul>
+        </div>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="col_9_in outdoor_bg">
+              <ul>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>                
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+
+             <li>
+                  <div class="post_img"> <img src="images/live_concert_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/live_concert_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="col_9_in outdoor_bg">
+              <ul>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                
+                
+                
+              </ul>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="messages">
+            <div class="col_9_in outdoor_bg">
+              <ul>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+                <li>
+                  <div class="post_img"> <img src="images/livebands_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+                  <div class="post_cnt">
+                    <p>Duis ut felis at velit <span>250 going</span></p>
+                    <span>Outdoor Event</span> <small>6, June, Dubai</small> </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="load_more"><a href="#">Load More</a></div>
+  <section class="upcoming_baner">
+	<div class="container">
+		<div class="col_sm_6">
+			<img src="images/coming.png">
+			<a href=""><span>Sponsored Ad:</span> Advertise with us</a>
+			
+		</div>
+			<div class="col_sm_6">
+			<img src="images/coming1.png">
+			
+		</div>
+		
+	</div>
+	
+</section>
+  <section class="trending_event">
+    <div class="container">
+      <h1 class="title1">trending Events</h1>
+    </div>
+  </section>
+  <section class="trending_event1">
+    <div class="container">
+      <div class="row">
+        <div class="col_9_in">
+          <ul>
+            <li>
+              <div class="post_img"> <img src="images/outdoors_img1.png" alt=""> <a href="#">Buy Tickets</a> </div>
+              <div class="post_cnt"> <strong>Pandit Ajoy Chakrabarty</strong> <span>Live In Concert 2017</span> <small>27, May</small> </div>
+            </li>
+            <li>
+              <div class="post_img"> <img src="images/outdoors_img2.png" alt=""> <a href="#">Buy Tickets</a> </div>
+              <div class="post_cnt"> <strong>Pandit Ajoy Chakrabarty</strong> <span>Live In Concert 2017</span> <small>27, May</small> </div>
+            </li>
+            <li>
+              <div class="post_img"> <img src="images/outdoors_img3.png" alt=""> <a href="#">Buy Tickets</a> </div>
+              <div class="post_cnt"> <strong>Pandit Ajoy Chakrabarty</strong> <span>Live In Concert 2017</span> <small>27, May</small> </div>
+            </li>
+            <li>
+              <div class="post_img"> <img src="images/outdoors_img4.png" alt=""> <a href="#">Buy Tickets</a> </div>
+              <div class="post_cnt"> <strong>Pandit Ajoy Chakrabarty</strong> <span>Live In Concert 2017</span> <small>27, May</small> </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ticket">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <h4 class="title4"> TICKET HOTLINE </h4>
+          <strong class="nmbre">+971 4 457 3212</strong> <small class="days">Sun - Sat 10:00 - 16:00</small> </div>
+        <div class="col-sm-7">
+          <h4 class="title4"> SUBSCRIBE TO OUR NEWSLETTER </h4>
+          <small class="days">Lorem Ipsum is simply dummy text of the printing</small>
+          <form class="subscrib">
+            <input type="text">
+            <input value="subscribe" type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10">
+        <div class="col-sm-3 col-xs-12 part">
+          <h5 class="title5"> Lorem Ipsum </h5>
+          <ul>
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Event guide</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 col-xs-12 part">
+          <h5 class="title5"> Lorem Ipsum </h5>
+          <ul>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Access control application</a></li>
+            <li><a href="#">Add event listing</a></li>
+            <li><a href="#">Sell tickets</a></li>
+            <li><a href="#">E-Permit application service</a></li>
+            <li><a href="#">Ticket printing service</a></li>
+            <li><a href="#">Venue ticketing solutions</a></li>
+            <li><a href="#">E-Permit DIY guide</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 col-xs-12 part">
+          <h5 class="title5"> Lorem Ipsum </h5>
+          <ul>
+            <li><a href="#">Free Event Reg.</a></li>
+            <li><a href="#">Find Event Online</a></li>
+            <li><a href="#">Create Event</a></li>
+            <li><a href="#">Organizer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 col-xs-12 part">
+          <h5 class="title5"> Need help? </h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Media Kit</a></li>
+            <li><a href="#">Terms of use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title5"> Follow us </h5>
+        <ul>
+          <li><a href="#"><img src="images/fb.png"></a></li>
+          <li><a href="#"><img src="images/tw.png"></a></li>
+          <li><a href="#"><img src="images/insta.png"></a></li>
+          <li><a href="#"><img src="images/p.png"></a></li>
+          <li><a href="#"><img src="images/a.png"></a></li>
+          <li><a href="#"><img src="images/you.png"></a></li>
+          <li><a href="#"><img src="images/t.png"></a></li>
+          <li><a href="#"><img src="images/g.png"></a></li>
+          <li><a href="#"><img src="images/v.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</body>
+</html>
